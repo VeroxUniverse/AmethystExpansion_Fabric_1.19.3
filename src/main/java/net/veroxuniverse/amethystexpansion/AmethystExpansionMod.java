@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.veroxuniverse.amethystexpansion.registry.block.BlocksRegistry;
 import net.veroxuniverse.amethystexpansion.registry.item.ItemsRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +28,7 @@ public class AmethystExpansionMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ItemsRegistry.registerModItems();
+		BlocksRegistry.registerModBlocks();
 
 		LOGGER.info("AmethystExpansion loading started!");
 	}
