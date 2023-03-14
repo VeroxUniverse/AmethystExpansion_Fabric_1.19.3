@@ -1,5 +1,10 @@
 {
-  "item.amethystexpansion.jade_shard": "Jade Shard",
+  "item.amethystexpansion.amethyst_ingot": "Amethyst Ingot",
+  "item.amethystexpansion.amethyst_chestplate": "Amethyst Chestplate",
+  "item.amethystexpansion.amethyst_helmet": "Amethyst Helmet",
+  "item.amethystexpansion.amethyst_leggings": "Amethyst Leggings",
+  "item.amethystexpansion.amethyst_boots": "Amethyst Boots",
+  "block.amethystexpansion.amethyst_ore": "Amethyst Ore",
 
   "itemGroup.amethystexpansion.amethyst": "Amethyst Expansion"
 }

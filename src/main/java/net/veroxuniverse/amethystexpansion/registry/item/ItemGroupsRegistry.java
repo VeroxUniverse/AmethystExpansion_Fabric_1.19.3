@@ -11,7 +11,7 @@ import net.veroxuniverse.amethystexpansion.AmethystExpansionMod;
 public class ItemGroupsRegistry {
 
     public static Identifier ID(String IDPath) {
-        return new Identifier(AmethystExpansionMod.MODID, IDPath);
+        return new Identifier(AmethystExpansionMod.MOD_ID, IDPath);
     }
 
     public static final ItemGroup AMETHYST_GROUP = FabricItemGroup.builder(ID("amethyst"))
@@ -20,6 +20,6 @@ public class ItemGroupsRegistry {
 
 
     public static void registerItemGroups() {
-        AmethystExpansionMod.LOGGER.info("Registering ItemGroups for " + AmethystExpansionMod.MODID);
+        AmethystExpansionMod.LOGGER.info("Registering ItemGroups for " + AmethystExpansionMod.MOD_ID);
     }
 }

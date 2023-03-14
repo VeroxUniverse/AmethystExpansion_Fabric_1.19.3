@@ -18,23 +18,23 @@ import net.veroxuniverse.amethystexpansion.registry.item.ItemGroupsRegistry;
 
 public class BlocksRegistry {
 
-    public static final Block JADE_ORE = registerBlock("jade_ore",
+    public static final Block AMETHYST_ORE = registerBlock("amethyst_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
                     UniformIntProvider.create(2, 6)), ItemGroupsRegistry.AMETHYST_GROUP);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
-        return Registry.register(Registries.BLOCK, new Identifier(AmethystExpansionMod.MODID, name), block);
+        return Registry.register(Registries.BLOCK, new Identifier(AmethystExpansionMod.MOD_ID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block, ItemGroup group) {
-        Item item = Registry.register(Registries.ITEM, new Identifier(AmethystExpansionMod.MODID, name),
+        Item item = Registry.register(Registries.ITEM, new Identifier(AmethystExpansionMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
         return item;
     }
 
     public static void registerModBlocks() {
-        AmethystExpansionMod.LOGGER.info("Registering ModBlocks for " + AmethystExpansionMod.MODID);
+        AmethystExpansionMod.LOGGER.info("Registering ModBlocks for " + AmethystExpansionMod.MOD_ID);
     }
 }

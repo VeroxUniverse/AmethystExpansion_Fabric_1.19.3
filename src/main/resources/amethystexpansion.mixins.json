@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.veroxuniverse.amethystexp.mixin",
+	"package": "net.veroxuniverse.amethystexpansion.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"ExampleMixin"
