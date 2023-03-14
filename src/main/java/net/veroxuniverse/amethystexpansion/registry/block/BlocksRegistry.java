@@ -14,12 +14,13 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.veroxuniverse.amethystexpansion.AmethystExpansionMod;
+import net.veroxuniverse.amethystexpansion.registry.item.ItemGroupsRegistry;
 
 public class BlocksRegistry {
 
     public static final Block JADE_ORE = registerBlock("jade_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
-                    UniformIntProvider.create(2, 6)), AmethystExpansionMod.AMETHYST_GROUP);
+                    UniformIntProvider.create(2, 6)), ItemGroupsRegistry.AMETHYST_GROUP);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

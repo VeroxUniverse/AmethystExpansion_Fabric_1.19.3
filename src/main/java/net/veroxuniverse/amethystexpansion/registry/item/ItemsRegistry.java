@@ -13,15 +13,13 @@ import net.veroxuniverse.amethystexpansion.AmethystExpansionMod;
 public class ItemsRegistry {
 
     public static final Item JADE_SHARD = registerItem("jade_shard",
-            new Item(new FabricItemSettings().rarity(Rarity.RARE)), AmethystExpansionMod.AMETHYST_GROUP);
-
+            new Item(new FabricItemSettings().rarity(Rarity.RARE)), ItemGroupsRegistry.AMETHYST_GROUP);
 
     private static Item registerItem(String name, Item item, ItemGroup group){
         Item items = Registry.register(Registries.ITEM, new Identifier(AmethystExpansionMod.MODID, name), item);
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(items));
         return items;
     }
-
 
     public static void registerModItems() {
         AmethystExpansionMod.LOGGER.info("Registering ModItems for " + AmethystExpansionMod.MODID);
