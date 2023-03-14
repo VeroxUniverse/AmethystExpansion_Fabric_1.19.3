@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.veroxuniverse.amethystexp.registry.item.ItemsRegistry;
+import net.veroxuniverse.amethystexpansion.registry.item.ItemsRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
