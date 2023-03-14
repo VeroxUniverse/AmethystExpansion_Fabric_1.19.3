@@ -10,8 +10,8 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-    AMETHYST("amethyst", 45, new int[]{3, 6, 8, 3}, 20,
-    SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.1F,
+    AMETHYST("amethyst", 45, new int[]{3, 6, 8, 3}, 25,
+    SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.2F,
             () -> {return Ingredient.ofItems(ItemsRegistry.AMETHYST_INGOT);
     });
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
