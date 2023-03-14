@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "amethystexp",
+	"id": "amethystexpansion",
 	"version": "${version}",
 	"name": "AmethystExpansion",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -16,13 +16,15 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.veroxuniverse.amethystexp.AmethystExpansionMod"
+			"net.veroxuniverse.amethystexpansion.AmethystExpansionMod"
 		],
 		"client": [
-			"net.veroxuniverse.amethystexp.AmethystExpansionModClient"
+			"net.veroxuniverse.amethystexpansion.AmethystExpansionModClient"
 		],
 		"fabric-datagen": [
-			"net.veroxuniverse.amethystexp.AmethystExpansionModDataGenerator"
+			"net.veroxuniverse.amethystexpansion.AmethystExpansionModDataGenerator"
+		],
+		"jei_mod_plugin": [
 		]
 	},
 	"mixins": [
