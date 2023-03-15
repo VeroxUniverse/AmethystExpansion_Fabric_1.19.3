@@ -24,6 +24,9 @@
 		"fabric-datagen": [
 			"net.veroxuniverse.amethystexpansion.AmethystExpansionModDataGenerator"
 		],
+		"terrablender": [
+			"net.veroxuniverse.amethystexpansion.AmethystExpansionMod"
+		],
 		"jei_mod_plugin": [
 		]
 	},
